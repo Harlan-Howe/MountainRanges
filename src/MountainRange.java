@@ -36,13 +36,14 @@ public class MountainRange
     {
         while (true)
         {
-            System.out.print(STR."\{prompt} ");
+            System.out.print(prompt);
             try
             {
                 int result = keyboardReader.nextInt();
                 if (result < min || result > max)
                 {
-                    System.out.println(STR."The value you entered was out of range. Pick a number within \{min} and \{max}, inclusive.");
+                    System.out.println("The value you entered was out of range. Pick a number within "+min+" and "+max+
+                            ", inclusive.");
                 }
                 else
                     return result;
@@ -185,7 +186,8 @@ public class MountainRange
     public void printOneMountain(int peakLocation, int peakHeight)
     {
         //TODO: You write this!!!
-        System.out.println(STR."Printing a mountain at \{peakLocation} with height \{peakHeight}. This hasn't been written yet."); // Please replace this with your code!!!
+        System.out.println("Printing a mountain at " + peakLocation + " with height " + peakHeight +
+                ". This hasn't been written yet."); // Please replace this with your code!!!
 
     }
 

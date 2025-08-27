@@ -1,6 +1,6 @@
 public class MountainRangesRunner
 {
-    void main()
+    public static void main(String[] args)
     {
         MountainRange app = new MountainRange();
         // checkHeightAtX(app); // uncomment this line to test your heightOfMountainAtX() method.
@@ -16,31 +16,31 @@ public class MountainRangesRunner
         if (firstHeight!=2)
         {
             testsPassed = false;
-            System.out.println(STR."First test failed. You got \{firstHeight} but it should be 2.");
+            System.out.println("First test failed. You got " + firstHeight + " but it should be 2.");
         }
         int secondHeight = range.heightOfMountainAtX(2,4,6);
         if (secondHeight!= 0)
         {
             testsPassed = false;
-            System.out.println(STR."Second test failed. You got \{secondHeight} but it should be 0.");
+            System.out.println("Second test failed. You got " + secondHeight + " but it should be 0.");
         }
         int thirdHeight = range.heightOfMountainAtX(8,4,5);
         if (thirdHeight != 1)
         {
             testsPassed = false;
-            System.out.println(STR."Third test failed. You got \{thirdHeight} but it should be 1.");
+            System.out.println("Third test failed. You got " + thirdHeight + " but it should be 1.");
         }
         int fourthHeight = range.heightOfMountainAtX(6,5,15);
         if (fourthHeight != 0)
         {
             testsPassed = false;
-            System.out.println(STR."Fourth test failed. You got \{fourthHeight} but it should be 0.");
+            System.out.println("Fourth test failed. You got " + fourthHeight + " but it should be 0.");
         }
         int fifthHeight = range.heightOfMountainAtX(12,9,12);
         if (fifthHeight != 9)
         {
             testsPassed = false;
-            System.out.println(STR."Fifth test failed. You got \{fifthHeight} but it should be 9.");
+            System.out.println("Fifth test failed. You got " + fifthHeight + " but it should be 9.");
         }
 
         if (testsPassed)
